@@ -36,20 +36,10 @@
 		<div id="main" class="container-fluid" style="margin-top: 50px">
   		<div id="top" class="row">
 		<div class="col-sm-3">
-			<h2>Usuários Cadastrados</h2>
-		</div>
-		<div class="col-sm-6">
-			<div class="input-group h2">
-				<input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Usuarios">
-				<span class="input-group-btn">
-					<button class="btn btn-primary" type="submit">
-						<span class="glyphicon glyphicon-search"></span>
-					</button>
-				</span>
-			</div>
+			<h2>Perfis Cadastrados</h2>
 		</div>
 		<div class="col-sm-3">
-			<a href="add.html" class="btn btn-primary pull-right h2">Novo Usuário</a>
+			<a href="addtela.html" class="btn btn-primary pull-right h2">Novo Perfil</a>
 			<a href="index.html" class="btn btn-default h2 ">Voltar</a>
 		</div>
 		</div> <!-- /#top -->
@@ -61,18 +51,16 @@
 			<thead>
 				<tr>
 					<th>ID</th>
-					<th>Nome</th>
 					<th>Perfil</th>
-					<th>Dt Cadastro</th>
-					<th class="actions">Ações</th>
+					<th>Status</th>
+					<th class="actions">Restrições</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>1001</td>
-					<td>Valci Moreira Dias</td>
+					<td>P001</td>
 					<td>Administrador</td>
-					<td>01/04/2018</td>
+					<td>Ativado</td>
 					<td class="actions">
 						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
 						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
@@ -80,21 +68,9 @@
 					</td>
 				</tr>
 				<tr>
-					<td>1002</td>
-					<td>Joaquim José da Silva Xavier</td>
-					<td>Vendedor</td>
-					<td>20/05/2017</td>
-					<td class="actions">
-						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
-						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
-						<a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
-					</td>
-				</tr>
-				<tr>
-					<td>1003</td>
-					<td>Mateus César Fontes</td>
+					<td>P002</td>
 					<td>Gerente</td>
-					<td>10/03/2018</td>
+					<td>Ativado</td>
 					<td class="actions">
 						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
 						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
@@ -102,10 +78,9 @@
 					</td>
 				</tr>
 				<tr>
-					<td>1004</td>
-					<td>Gabriela Nunes da Fonseca</td>
+					<td>P003</td>
 					<td>Financeiro</td>
-					<td>21/01/2018</td>
+					<td>Ativado</td>
 					<td class="actions">
 						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
 						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
@@ -113,10 +88,9 @@
 					</td>
 				</tr>
 				<tr>
-					<td>1005</td>
-					<td>Sebastião da Costa Silva</td>
+					<td>P004</td>
 					<td>Vendedor</td>
-					<td>18/03/2018</td>
+					<td>Ativado</td>
 					<td class="actions">
 						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
 						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
@@ -124,10 +98,9 @@
 					</td>
 				</tr>
 				<tr>
-					<td>1006</td>
-					<td>Israel Rogers da Silva</td>
-					<td>Vendedor</td>
-					<td>23/07/2017</td>
+					<td>P005</td>
+					<td>Administrativo</td>
+					<td>Ativado</td>
 					<td class="actions">
 						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
 						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
@@ -135,10 +108,9 @@
 					</td>
 				</tr>
 				<tr>
-					<td>1007</td>
-					<td>Maria Auxiliadora Santos</td>
-					<td>Financeiro</td>
-					<td>15/01/2018</td>
+					<td>T006</td>
+					<td>Pessoal</td>
+					<td>Desativado</td>
 					<td class="actions">
 						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
 						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
@@ -146,10 +118,19 @@
 					</td>
 				</tr>
 				<tr>
-					<td>1008</td>
-					<td>João Apolinario</td>
-					<td>Gerente</td>
-					<td>23/02/2018</td>
+					<td>P007</td>
+					<td>Operacional</td>
+					<td>Ativado</td>
+					<td class="actions">
+						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
+						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+						<a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+					</td>
+				</tr>
+				<tr>
+					<td>P008</td>
+					<td>Diretoria</td>
+					<td>Ativado</td>
 					<td class="actions">
 						<a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
 						<a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
@@ -180,10 +161,10 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
+		        <h4 class="modal-title" id="modalLabel">Excluir Perfil</h4>
 		      </div>
 		      <div class="modal-body">
-		        Deseja realmente excluir este item?
+		        Deseja realmente excluir este perfil?
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-primary">Sim</button>
